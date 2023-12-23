@@ -44,19 +44,18 @@ nav {
     gap: 1rem;
 }
 
+.fa-brands {
+    cursor: pointer;
+}
+
 .hero-intro {
-    /* display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 65vh;
 }
 
 .hero-intro-img {
-    /* position: relative; */
     height: 100%;
-    /* background-color: #c43edf; */
 }
 
 .hero-intro-img img {
@@ -96,12 +95,10 @@ nav {
     color: #fff;
     font-weight: 600;
     cursor: pointer;
-    transition: 1s;
 }
 
 .download-cv:hover {
     background-image: linear-gradient(to right, #35f3fd, #c43edf);
-    transition: 1s;
 }
 
 .fa-cloud-arrow-down {
@@ -262,6 +259,11 @@ nav {
         align-items: center;
         padding-top: 3rem;
         transition: 0.5s;
+        overflow-y: hidden;
+    }
+
+    .drop-down body {
+        overflow-y: hidden;
     }
 
 }
