@@ -7,6 +7,5 @@ menuBtn.addEventListener("click", function () {
         document.body.style.overflowY = "hidden"
     } else {
         document.body.style.overflowY = "scroll"
-
     }
 })
