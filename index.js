@@ -1,5 +1,6 @@
 const menuBtn = document.querySelector(".menu-btn");
 const navList = document.querySelector(".nav-list");
+const navLink = document.querySelectorAll(".nav-list");
 const projectGrid = document.querySelector(".project-grid");
 
 menuBtn.addEventListener("click", function () {
@@ -10,6 +11,15 @@ menuBtn.addEventListener("click", function () {
         document.body.style.overflowY = "scroll"
     }
 })
+
+navLink.forEach(link => (
+    link.addEventListener("click", () => {
+        if (navList.classList.contains("drop-down")) {
+            navList.classList.remove("drop-down")
+            document.body.style.overflowY = "scroll"
+        }
+    }
+    )))
 
 const projects = [
     {
@@ -34,11 +44,11 @@ const projects = [
         githubLink: "https://github.com/Geeluv/portfolio"
     },
     {
-        imageSource: "./images/movies-app.png",
-        title: "Movie search app",
-        description: "Responsive app built with HTML, CSS3 and JavaScript",
-        previewLink: "https://merry-paletas-3aa676.netlify.app",
-        githubLink: "https://github.com/Geeluv/movie-search-app"
+        imageSource: "./images/quiz.png",
+        title: "Quiz app",
+        description: "Responsive app built with HTML, CSS3 and Vanilla javascript",
+        previewLink: "https://darling-otter-d6d5b3.netlify.app",
+        githubLink: "https://github.com/Geeluv/quiz-app"
     },
     {
         imageSource: "./images/movies-app.png",
